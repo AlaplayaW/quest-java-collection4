@@ -1,8 +1,6 @@
 import java.util.TreeMap;
 import java.util.Comparator;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
 
 
 public class Thanos {
@@ -49,8 +47,14 @@ public class Thanos {
 
 
         // TODO 2 : Print if `begonia` is contained in the TreeMap
+        System.out.println(party.containsValue("begonia"));
+
 
         // TODO 3 : For each hero, alphabetically, print the corresponding flower
+        for (Hero hero : party.keySet()) {
+            Flower flower = party.get(hero);
+            System.out.println(flower.getName());
+        }
 
     }
 }
